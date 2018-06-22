@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Postal Calculator</title>
+</head>
+<body>
+    <div class="form">
+    <h1>Postage Submission Form</h1>
+    
+    <form action="/getRate" method="get">
+        <label>Weight (in oz.):</label>
+        <input type="input" name="weight">
+         <label>Type of Mail</label>
+        
+        <select name="category">
+            <option value="letStamp">Letters(Stamped)</option>
+            
+            <option value="letMet">Letters(Metered)</option>
+          
+            <option value="letEnv">Letters(Envelop)</option>
+           
+            <option value="pacakage">First Class Package-Service-Retail></Package-Service-Retail></option> <br>
+           
+        </select>
+        <br>
+		<br>
+		<input type="submit" value="Get Rate">
+
+    </form>
+</div>
+</body>
+</html>
